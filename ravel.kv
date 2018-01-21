@@ -1,0 +1,24 @@
+#:kivy 1.10.0
+
+
+<ObjectWidget>:
+    size: 40, 40
+    canvas:
+        Color:
+            rgb: 1,1,1,
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+
+<StudioWidget>:
+    MapWidget:
+        id: map
+    WorldWidget:
+        id: world
+
+
+<RootWidget>:
+    orientation: 'vertical'
+    StudioWidget:
+        id: studio
